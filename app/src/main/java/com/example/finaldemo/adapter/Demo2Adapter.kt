@@ -6,37 +6,42 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.example.finaldemo.R
-import com.example.finaldemo.databinding.ItemDemo1Binding
+import com.example.finaldemo.databinding.ItemDemo2Binding
 import com.example.finaldemo.model.PostsResponseItem
 
 /**
  * Created by Abhin.
  */
-class PostsAdapter : RecyclerView.Adapter<PostsAdapter.PostsViewHolder>() {
+class Demo2Adapter : RecyclerView.Adapter<Demo2Adapter.Demo2ViewHolder>() {
 
-private var postsData = mutableListOf<PostsResponseItem>()
+    private var postsData = mutableListOf<PostsResponseItem>()
 
     @SuppressLint("NotifyDataSetChanged")
     fun setPostsList(movies: List<PostsResponseItem>) {
         postsData.addAll(movies)
         notifyDataSetChanged()
     }
-    class PostsViewHolder(var binding: ItemDemo1Binding) : RecyclerView.ViewHolder(binding.root) {
-        fun bindData(list: PostsResponseItem){
+
+    class Demo2ViewHolder(var binding: ItemDemo2Binding) : RecyclerView.ViewHolder(binding.root) {
+        fun bindData(list: PostsResponseItem) {
             binding.apply {
-                postsData = list
+                postsData2 = list
                 executePendingBindings()
             }
         }
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PostsViewHolder {
-       return PostsViewHolder(DataBindingUtil.inflate(LayoutInflater.from(parent.context), R
-           .layout.item_demo1,
-           parent,false))
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Demo2ViewHolder {
+        return Demo2ViewHolder(
+            DataBindingUtil.inflate(
+                LayoutInflater.from(parent.context), R
+                    .layout.item_demo2,
+                parent, false
+            )
+        )
     }
 
-    override fun onBindViewHolder(holder: PostsViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: Demo2ViewHolder, position: Int) {
         val data = postsData[position]
         holder.bindData(data)
     }

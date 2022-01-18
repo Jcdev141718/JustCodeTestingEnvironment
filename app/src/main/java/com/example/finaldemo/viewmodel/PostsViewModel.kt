@@ -23,7 +23,7 @@ class PostsViewModel(private val postsRepository: PostsRepository) : ViewModel()
                 call: Call<List<PostsResponseItem>>,
                 response: Response<List<PostsResponseItem>>
             ) {
-                postList.postValue(response.body())
+                postList.postValue(response.body()?.take(5))
             }
 
             override fun onFailure(call: Call<List<PostsResponseItem>>, t: Throwable) {

@@ -6,7 +6,6 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.finaldemo.adapter.PostsAdapter
 import com.example.finaldemo.databinding.ActivityDemo1Binding
-import com.example.finaldemo.model.PostsResponseItem
 import com.example.finaldemo.network.ApiService
 import com.example.finaldemo.repository.PostsRepository
 import com.example.finaldemo.viewmodel.MyViewModelFactory
@@ -17,7 +16,6 @@ class DemoActivity1 : AppCompatActivity() {
     lateinit var postsViewModel: PostsViewModel
     lateinit var mAdapter: PostsAdapter
     private var apiService = ApiService.getRetrofit()
-    private var postsList: ArrayList<PostsResponseItem> = ArrayList()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,7 +27,7 @@ class DemoActivity1 : AppCompatActivity() {
             mAdapter.setPostsList(it)
         })
         mBinding.rvDemo1.layoutManager = LinearLayoutManager(this)
-        mAdapter = PostsAdapter(postsList)
+        mAdapter = PostsAdapter()
         mBinding.rvDemo1.adapter = mAdapter
     }
 }
