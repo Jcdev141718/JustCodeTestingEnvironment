@@ -1,6 +1,7 @@
 package com.example.finaldemo.network
 
-import com.example.finaldemo.model.PostsResponseItem
+import com.example.finaldemo.model.got.GotResponseItem
+import com.example.finaldemo.model.posts.PostsResponseItem
 import com.example.finaldemo.util.Constants
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
@@ -18,6 +19,9 @@ interface ApiService {
 
     @GET("posts.json")
     fun getPosts(): Call<List<PostsResponseItem>>
+
+    @GET("got.json")
+    fun getGotApi(): Call<List<GotResponseItem>>
 
     companion object {
         var apiService: ApiService? = null

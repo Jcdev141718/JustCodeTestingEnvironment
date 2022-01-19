@@ -8,8 +8,8 @@ import com.example.finaldemo.adapter.PostsAdapter
 import com.example.finaldemo.databinding.ActivityDemo1Binding
 import com.example.finaldemo.network.ApiService
 import com.example.finaldemo.repository.PostsRepository
-import com.example.finaldemo.viewmodel.MyViewModelFactory
 import com.example.finaldemo.viewmodel.PostsViewModel
+import com.example.finaldemo.viewmodel.PostsViewModelFactory
 
 class DemoActivity1 : AppCompatActivity() {
     lateinit var mBinding : ActivityDemo1Binding
@@ -21,7 +21,7 @@ class DemoActivity1 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         mBinding = ActivityDemo1Binding.inflate(layoutInflater)
         setContentView(mBinding.root)
-        postsViewModel = ViewModelProvider(this, MyViewModelFactory(PostsRepository(apiService)))[PostsViewModel::class.java]
+        postsViewModel = ViewModelProvider(this, PostsViewModelFactory(PostsRepository(apiService)))[PostsViewModel::class.java]
         postsViewModel.getPosts()
         postsViewModel.postList.observe(this,{
             mAdapter.setPostsList(it)

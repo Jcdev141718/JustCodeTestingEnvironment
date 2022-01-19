@@ -7,7 +7,7 @@ import com.example.finaldemo.repository.PostsRepository
 /**
  * Created by Abhin.
  */
-class MyViewModelFactory constructor(private val postsRepository: PostsRepository): ViewModelProvider.Factory {
+class PostsViewModelFactory constructor(private val postsRepository: PostsRepository): ViewModelProvider.Factory {
 
     override fun <T : ViewModel> create(modelClass: Class<T>): T {
         return if (modelClass.isAssignableFrom(PostsViewModel::class.java)) {

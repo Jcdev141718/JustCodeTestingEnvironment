@@ -1,4 +1,4 @@
-package com.example.finaldemo.model
+package com.example.finaldemo.model.posts
 
 data class PostsResponseItem(
     val body: String,

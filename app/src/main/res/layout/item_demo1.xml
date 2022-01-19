@@ -5,7 +5,7 @@
 
         <variable
             name="postsData"
-            type="com.example.finaldemo.model.PostsResponseItem" />
+            type="com.example.finaldemo.model.posts.PostsResponseItem" />
     </data>
 
     <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"

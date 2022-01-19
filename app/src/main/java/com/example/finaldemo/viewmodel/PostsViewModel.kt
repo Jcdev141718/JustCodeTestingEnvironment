@@ -2,7 +2,7 @@ package com.example.finaldemo.viewmodel
 
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
-import com.example.finaldemo.model.PostsResponseItem
+import com.example.finaldemo.model.posts.PostsResponseItem
 import com.example.finaldemo.repository.PostsRepository
 import retrofit2.Call
 import retrofit2.Callback

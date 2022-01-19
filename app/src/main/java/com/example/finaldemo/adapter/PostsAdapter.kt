@@ -7,7 +7,7 @@ import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.example.finaldemo.R
 import com.example.finaldemo.databinding.ItemDemo1Binding
-import com.example.finaldemo.model.PostsResponseItem
+import com.example.finaldemo.model.posts.PostsResponseItem
 
 /**
  * Created by Abhin.
