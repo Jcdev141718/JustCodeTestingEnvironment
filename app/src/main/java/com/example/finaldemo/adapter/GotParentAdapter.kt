@@ -14,7 +14,10 @@ import com.example.finaldemo.model.got.GotResponseItem
 /**
  * Created by Abhin.
  */
-class GotParentAdapter(var context: Context) : RecyclerView.Adapter<GotParentAdapter.ParentViewHolder>() {
+class GotParentAdapter(var context: Context) :
+    RecyclerView.Adapter<GotParentAdapter.ParentViewHolder>() {
+
+    private var viewPools = RecyclerView.RecycledViewPool()
 
     private var gotData = mutableListOf<GotResponseItem>()
 
@@ -46,8 +49,11 @@ class GotParentAdapter(var context: Context) : RecyclerView.Adapter<GotParentAda
 
     override fun onBindViewHolder(holder: ParentViewHolder, position: Int) {
         val data = gotData[position]
-        holder.binding.rvNestedDemo2.layoutManager = LinearLayoutManager(context,
-            LinearLayoutManager.HORIZONTAL,false)
+        holder.binding.rvNestedDemo2.setRecycledViewPool(viewPools)
+        holder.binding.rvNestedDemo2.layoutManager = LinearLayoutManager(
+            context,
+            LinearLayoutManager.HORIZONTAL, false
+        )
         holder.binding.rvNestedDemo2.adapter = GotChildAdapter(data.members)
         holder.bindData(data)
     }
