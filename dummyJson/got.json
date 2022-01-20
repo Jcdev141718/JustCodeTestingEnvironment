@@ -45,6 +45,26 @@
                 "name": "Tywin Lannister",
                 "slug": "tywin"
             }
+            {
+                "name": "Jon Snow",
+                "slug": "jon"
+            },
+            {
+                "name": "Sansa Stark",
+                "slug": "sansa"
+            },
+            {
+                "name": "Eddard \"Ned\" Stark",
+                "slug": "ned"
+            },
+            {
+                "name": "Arya Stark",
+                "slug": "arya"
+            },
+            {
+                "name": "Bran Stark",
+                "slug": "bran"
+            }
         ]
     },
     {
@@ -58,6 +78,26 @@
             {
                 "name": "Robert Baratheon",
                 "slug": "robert"
+            }
+            {
+                "name": "Jon Snow",
+                "slug": "jon"
+            },
+            {
+                "name": "Sansa Stark",
+                "slug": "sansa"
+            },
+            {
+                "name": "Eddard \"Ned\" Stark",
+                "slug": "ned"
+            },
+            {
+                "name": "Arya Stark",
+                "slug": "arya"
+            },
+            {
+                "name": "Bran Stark",
+                "slug": "bran"
             }
         ]
     },
@@ -73,6 +113,26 @@
                 "name": "Daenerys Targaryen",
                 "slug": "daenerys"
             }
+            {
+                "name": "Jon Snow",
+                "slug": "jon"
+            },
+            {
+                "name": "Sansa Stark",
+                "slug": "sansa"
+            },
+            {
+                "name": "Eddard \"Ned\" Stark",
+                "slug": "ned"
+            },
+            {
+                "name": "Arya Stark",
+                "slug": "arya"
+            },
+            {
+                "name": "Bran Stark",
+                "slug": "bran"
+            }
         ]
     },
     {
@@ -82,6 +142,26 @@
             {
                 "name": "Theon Greyjoy",
                 "slug": "theon"
+            }
+            {
+                "name": "Jon Snow",
+                "slug": "jon"
+            },
+            {
+                "name": "Sansa Stark",
+                "slug": "sansa"
+            },
+            {
+                "name": "Eddard \"Ned\" Stark",
+                "slug": "ned"
+            },
+            {
+                "name": "Arya Stark",
+                "slug": "arya"
+            },
+            {
+                "name": "Bran Stark",
+                "slug": "bran"
             }
         ]
     },
@@ -93,6 +173,26 @@
                 "name": "Samwell Tarly",
                 "slug": "samwell"
             }
+            {
+                "name": "Jon Snow",
+                "slug": "jon"
+            },
+            {
+                "name": "Sansa Stark",
+                "slug": "sansa"
+            },
+            {
+                "name": "Eddard \"Ned\" Stark",
+                "slug": "ned"
+            },
+            {
+                "name": "Arya Stark",
+                "slug": "arya"
+            },
+            {
+                "name": "Bran Stark",
+                "slug": "bran"
+            }
         ]
     },
     {
@@ -102,6 +202,26 @@
             {
                 "name": "Brienne of Tharth",
                 "slug": "brienne"
+            }
+            {
+                "name": "Jon Snow",
+                "slug": "jon"
+            },
+            {
+                "name": "Sansa Stark",
+                "slug": "sansa"
+            },
+            {
+                "name": "Eddard \"Ned\" Stark",
+                "slug": "ned"
+            },
+            {
+                "name": "Arya Stark",
+                "slug": "arya"
+            },
+            {
+                "name": "Bran Stark",
+                "slug": "bran"
             }
         ]
     },
@@ -113,6 +233,26 @@
                 "name": "Ramsay Bolton",
                 "slug": "ramsay"
             }
+            {
+                "name": "Jon Snow",
+                "slug": "jon"
+            },
+            {
+                "name": "Sansa Stark",
+                "slug": "sansa"
+            },
+            {
+                "name": "Eddard \"Ned\" Stark",
+                "slug": "ned"
+            },
+            {
+                "name": "Arya Stark",
+                "slug": "arya"
+            },
+            {
+                "name": "Bran Stark",
+                "slug": "bran"
+            }
         ]
     },
     {
@@ -123,6 +263,26 @@
                 "name": "Petyr Baelish",
                 "slug": "baelish"
             }
+            {
+                "name": "Jon Snow",
+                "slug": "jon"
+            },
+            {
+                "name": "Sansa Stark",
+                "slug": "sansa"
+            },
+            {
+                "name": "Eddard \"Ned\" Stark",
+                "slug": "ned"
+            },
+            {
+                "name": "Arya Stark",
+                "slug": "arya"
+            },
+            {
+                "name": "Bran Stark",
+                "slug": "bran"
+            }
         ]
     },
     {
@@ -132,6 +292,46 @@
             {
                 "name": "Olenna Tyrell",
                 "slug": "olenna"
+            }
+            {
+                "name": "Jon Snow",
+                "slug": "jon"
+            },
+            {
+                "name": "Sansa Stark",
+                "slug": "sansa"
+            },
+            {
+                "name": "Eddard \"Ned\" Stark",
+                "slug": "ned"
+            },
+            {
+                "name": "Arya Stark",
+                "slug": "arya"
+            },
+            {
+                "name": "Bran Stark",
+                "slug": "bran"
+            }
+    {
+                "name": "Jon Snow",
+                "slug": "jon"
+            },
+            {
+                "name": "Sansa Stark",
+                "slug": "sansa"
+            },
+            {
+                "name": "Eddard \"Ned\" Stark",
+                "slug": "ned"
+            },
+            {
+                "name": "Arya Stark",
+                "slug": "arya"
+            },
+            {
+                "name": "Bran Stark",
+                "slug": "bran"
             }
         ]
     }
