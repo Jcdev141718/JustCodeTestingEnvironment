@@ -1,73 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/cardView_item3"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_margin="10dp"
-    android:elevation="10dp"
-    android:padding="20dp"
-    app:cardCornerRadius="10dp">
+<layout>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/cl_item3"
+    <data class="ImgTxtDemo3Binding">
+
+        <variable
+            name="imgTxtData"
+            type="com.example.finaldemo.model.imgtxt.ImgTxtResponseItem" />
+    </data>
+
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/cardView_item3"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:elevation="10dp"
+        android:padding="20dp"
+        app:cardCornerRadius="10dp">
 
-        <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/img_item3"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:layout_marginStart="10dp"
-            android:src="@drawable/ic_launcher_background"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cl_item3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/txt1_item3"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            app:layout_constraintEnd_toStartOf="@id/progress_item3"
-            app:layout_constraintStart_toEndOf="@id/img_item3"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:text="Text1" />
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/img_item3"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginStart="10dp"
+                tools:src="@drawable/ic_launcher_background"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay" />
 
-        <androidx.appcompat.widget.AppCompatTextView
-            android:id="@+id/txt2_item3"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            app:layout_constraintEnd_toStartOf="@id/progress_item3"
-            app:layout_constraintStart_toEndOf="@id/img_item3"
-            app:layout_constraintTop_toBottomOf="@id/txt1_item3"
-            tools:text="Text2" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt1_item3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@{imgTxtData.text1}"
+                app:layout_constraintEnd_toStartOf="@id/progress_item3"
+                app:layout_constraintStart_toEndOf="@id/img_item3"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Text1" />
 
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btn_item3"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:text="Click"
-            android:textAllCaps="false"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@id/progress_item3"
-            app:layout_constraintStart_toEndOf="@id/img_item3"
-            app:layout_constraintTop_toBottomOf="@id/txt2_item3" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt2_item3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@{imgTxtData.text2}"
+                app:layout_constraintEnd_toStartOf="@id/progress_item3"
+                app:layout_constraintStart_toEndOf="@id/img_item3"
+                app:layout_constraintTop_toBottomOf="@id/txt1_item3"
+                tools:text="Text2" />
 
-        <ProgressBar
-            android:id="@+id/progress_item3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="10dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@id/btn_item3"
-            app:layout_constraintTop_toTopOf="parent" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_item3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Click"
+                android:textAllCaps="false"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/progress_item3"
+                app:layout_constraintStart_toEndOf="@id/img_item3"
+                app:layout_constraintTop_toBottomOf="@id/txt2_item3" />
+
+            <com.google.android.material.progressindicator.CircularProgressIndicator
+                android:progress="50"
+                android:id="@+id/progress_item3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:layout_marginHorizontal="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/btn_item3"
+                app:layout_constraintTop_toTopOf="parent" />
 
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
-</androidx.cardview.widget.CardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

@@ -1,11 +1,13 @@
 package com.example.finaldemo.network
 
 import com.example.finaldemo.model.got.GotResponseItem
+import com.example.finaldemo.model.imgtxt.ImgTxtResponseItem
 import com.example.finaldemo.model.posts.PostsResponseItem
 import com.example.finaldemo.util.Constants
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Call
+import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.GET
@@ -22,6 +24,9 @@ interface ApiService {
 
     @GET("got.json")
     fun getGotApi(): Call<List<GotResponseItem>>
+
+    @GET("myimgtext.json")
+    suspend fun getImgTxtApi(): Response<ArrayList<ImgTxtResponseItem>>
 
     companion object {
         var apiService: ApiService? = null
