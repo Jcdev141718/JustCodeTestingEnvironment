@@ -6,33 +6,33 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.example.finaldemo.R
-import com.example.finaldemo.databinding.ImgTxtDemo3Binding
+import com.example.finaldemo.databinding.ImgTxtDemo4Binding
 import com.example.finaldemo.model.imgtxt.ImgTxtResponseItem
 
 /**
  * Created by Abhin.
  */
-class ImgTxtAdapter(private var imgTxtList: ArrayList<ImgTxtResponseItem>) :
-    RecyclerView.Adapter<ImgTxtAdapter.ImgTxtViewHolder>() {
+class ImgTxtAdapter4(private var imgTxtList: ArrayList<ImgTxtResponseItem>) :
+    RecyclerView.Adapter<ImgTxtAdapter4.ImgTxtViewHolder>() {
 
-    inner class ImgTxtViewHolder(private var mBinding: ImgTxtDemo3Binding) : RecyclerView.ViewHolder
+    inner class ImgTxtViewHolder(private var mBinding: ImgTxtDemo4Binding) : RecyclerView.ViewHolder
         (mBinding.root) {
         fun bindData(list: ImgTxtResponseItem) {
             mBinding.apply {
-                imgTxtData = list
+                imgTxtData4 = list
                 executePendingBindings()
-                when (progressItem3.progress) {
-                    in 0..25 -> {
-                        cardViewItem3.setBackgroundColor(Color.RED)
+                when {
+                    edtItem4.text!!.equals(0..25) -> {
+                        cardViewItem4.setBackgroundColor(Color.RED)
                     }
-                    in 26..50 -> {
-                        cardViewItem3.setBackgroundColor(Color.BLUE)
+                    edtItem4.text!!.equals(26..50) -> {
+                        cardViewItem4.setBackgroundColor(Color.BLUE)
                     }
-                    in 51..75 -> {
-                        cardViewItem3.setBackgroundColor(Color.GREEN)
+                    edtItem4.text!!.equals(51..75) -> {
+                        cardViewItem4.setBackgroundColor(Color.GREEN)
                     }
-                    in 76..100 -> {
-                        cardViewItem3.setBackgroundColor(Color.YELLOW)
+                    edtItem4.text!!.equals(76..100) -> {
+                        cardViewItem4.setBackgroundColor(Color.YELLOW)
                     }
                 }
             }
@@ -42,17 +42,17 @@ class ImgTxtAdapter(private var imgTxtList: ArrayList<ImgTxtResponseItem>) :
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
-    ): ImgTxtAdapter.ImgTxtViewHolder {
+    ): ImgTxtAdapter4.ImgTxtViewHolder {
         return ImgTxtViewHolder(
             DataBindingUtil.inflate(
                 LayoutInflater.from(parent.context), R
-                    .layout.item_demo3,
+                    .layout.item_demo4,
                 parent, false
             )
         )
     }
 
-    override fun onBindViewHolder(holder: ImgTxtAdapter.ImgTxtViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: ImgTxtAdapter4.ImgTxtViewHolder, position: Int) {
         val data = imgTxtList[position]
         holder.bindData(data)
     }

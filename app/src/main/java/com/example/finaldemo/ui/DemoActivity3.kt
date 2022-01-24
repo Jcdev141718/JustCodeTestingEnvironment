@@ -28,7 +28,7 @@ class DemoActivity3 : AppCompatActivity() {
 
         imgTxtViewModel.imgTxt.observe(this, Observer {
             if(it !=null){
-                mAdapter = ImgTxtAdapter(this,it)
+                mAdapter = ImgTxtAdapter(it)
                 mBinding.rvDemo3.layoutManager = LinearLayoutManager(this)
                 mBinding.rvDemo3.adapter = mAdapter
             }
