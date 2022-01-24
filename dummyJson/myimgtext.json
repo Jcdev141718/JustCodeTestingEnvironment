@@ -2,6 +2,7 @@
   {
     "id": 1,
     "title": "Autumn leaves",
+    "progress": 10,
     "text1": "Autumn leaves Text1",
     "text2": "Autumn leaves Text2",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun",
@@ -9,6 +10,7 @@
   },
   {
     "id": 2,
+    "progress": 27,
     "title": "Alpine mountains",
     "text1": "Alpine mountains Text1",
     "text2": "Alpine mountains Text2",
@@ -17,6 +19,7 @@
   },
   {
     "id": 3,
+    "progress": 55,
     "title": "Mountain climbing adventure",
     "text1": "Mountain climbing adventure Text1",
     "text2": "Mountain climbing adventure Text2",
@@ -25,6 +28,7 @@
   },
   {
     "id": 4,
+    "progress": 85,
     "title": "Northen light Aurora",
     "text1": "Northen light Aurora Text1",
     "text2": "Northen light Aurora Text2",
@@ -33,6 +37,7 @@
   },
   {
     "id": 5,
+    "progress": 11,
     "title": "Polar Bear",
     "text1": "Polar Bear Text1",
     "text2": "Polar Bear Text2",
@@ -41,6 +46,7 @@
   },
   {
     "id": 1,
+    "progress": 28,
     "title": "Autumn leaves",
     "text1": "Autumn leaves Text1",
     "text2": "Autumn leaves Text2",
@@ -49,6 +55,7 @@
   },
   {
     "id": 2,
+    "progress": 57,
     "title": "Alpine mountains",
     "text1": "Alpine mountains Text1",
     "text2": "Alpine mountains Text2",
@@ -57,6 +64,7 @@
   },
   {
     "id": 3,
+    "progress": 89,
     "title": "Mountain climbing adventure",
     "text1": "Mountain climbing adventure Text1",
     "text2": "Mountain climbing adventure Text2",
@@ -65,6 +73,7 @@
   },
   {
     "id": 4,
+    "progress": 2,
     "title": "Northen light Aurora",
     "text1": "Northen light Aurora Text1",
     "text2": "Northen light Aurora Text2",
@@ -73,6 +82,7 @@
   },
   {
     "id": 5,
+    "progress": 26,
     "title": "Polar Bear",
     "text1": "Polar Bear Text1",
     "text2": "Polar Bear Text2",
@@ -81,6 +91,7 @@
   },
   {
     "id": 1,
+    "progress": 52,
     "title": "Autumn leaves",
     "text1": "Autumn leaves Text1",
     "text2": "Autumn leaves Text2",
@@ -89,6 +100,7 @@
   },
   {
     "id": 2,
+    "progress": 60,
     "title": "Alpine mountains",
     "text1": "Alpine mountains Text1",
     "text2": "Alpine mountains Text2",
@@ -97,6 +109,7 @@
   },
   {
     "id": 3,
+    "progress": 88,
     "title": "Mountain climbing adventure",
     "text1": "Mountain climbing adventure Text1",
     "text2": "Mountain climbing adventure Text2",
@@ -105,6 +118,7 @@
   },
   {
     "id": 4,
+    "progress": 4,
     "title": "Northen light Aurora",
     "text1": "Northen light Aurora Text1",
     "text2": "Northen light Aurora Text2",
@@ -113,6 +127,7 @@
   },
   {
     "id": 5,
+    "progress": 70,
     "title": "Polar Bear",
     "text1": "Polar Bear Text1",
     "text2": "Polar Bear Text2",
@@ -121,6 +136,7 @@
   },
   {
     "id": 1,
+    "progress": 49,
     "title": "Autumn leaves",
     "text1": "Autumn leaves Text1",
     "text2": "Autumn leaves Text2",
@@ -129,6 +145,7 @@
   },
   {
     "id": 2,
+    "progress": 25,
     "title": "Alpine mountains",
     "text1": "Alpine mountains Text1",
     "text2": "Alpine mountains Text2",
@@ -137,6 +154,7 @@
   },
   {
     "id": 3,
+    "progress": 80,
     "title": "Mountain climbing adventure",
     "text1": "Mountain climbing adventure Text1",
     "text2": "Mountain climbing adventure Text2",
@@ -145,6 +163,7 @@
   },
   {
     "id": 4,
+    "progress": 20,
     "title": "Northen light Aurora",
     "text1": "Northen light Aurora Text1",
     "text2": "Northen light Aurora Text2",
@@ -153,6 +172,7 @@
   },
   {
     "id": 5,
+    "progress": 10,
     "title": "Polar Bear",
     "text1": "Polar Bear Text1",
     "text2": "Polar Bear Text2",
@@ -161,6 +181,7 @@
   },
   {
     "id": 1,
+    "progress": 90,
     "title": "Autumn leaves",
     "text1": "Autumn leaves Text1",
     "text2": "Autumn leaves Text2",
@@ -169,6 +190,7 @@
   },
   {
     "id": 2,
+    "progress": 59,
     "title": "Alpine mountains",
     "text1": "Alpine mountains Text1",
     "text2": "Alpine mountains Text2",
@@ -177,6 +199,7 @@
   },
   {
     "id": 3,
+    "progress": 99,
     "title": "Mountain climbing adventure",
     "text1": "Mountain climbing adventure Text1",
     "text2": "Mountain climbing adventure Text2",
@@ -185,6 +208,7 @@
   },
   {
     "id": 4,
+    "progress": 77,
     "title": "Northen light Aurora",
     "text1": "Northen light Aurora Text1",
     "text2": "Northen light Aurora Text2",
@@ -193,6 +217,7 @@
   },
   {
     "id": 5,
+    "progress": 15,
     "title": "Polar Bear",
     "text1": "Polar Bear Text1",
     "text2": "Polar Bear Text2",
