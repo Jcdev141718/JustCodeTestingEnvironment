@@ -13,6 +13,7 @@ import kotlinx.coroutines.launch
  */
 class ImgTxtViewModel(var imgTxtRepository: ImgTxtRepository) : ViewModel() {
     private var imgTxtList = MutableLiveData<ArrayList<ImgTxtResponseItem>>()
+    private var count = 0
 
     val imgTxt: LiveData<ArrayList<ImgTxtResponseItem>>
         get() = imgTxtRepository.imgTxt

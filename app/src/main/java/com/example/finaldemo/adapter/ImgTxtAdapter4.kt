@@ -1,6 +1,7 @@
 package com.example.finaldemo.adapter
 
-import android.graphics.Color
+import android.annotation.SuppressLint
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
@@ -12,28 +13,27 @@ import com.example.finaldemo.model.imgtxt.ImgTxtResponseItem
 /**
  * Created by Abhin.
  */
-class ImgTxtAdapter4(private var imgTxtList: ArrayList<ImgTxtResponseItem>) :
-    RecyclerView.Adapter<ImgTxtAdapter4.ImgTxtViewHolder>() {
+class ImgTxtAdapter4(private var imgTxtList: ArrayList<ImgTxtResponseItem>, var mClickedInterface: ButtonClickInterface) : RecyclerView.Adapter<ImgTxtAdapter4.ImgTxtViewHolder>() {
+
+    @SuppressLint("NotifyDataSetChanged")
+    fun updateData(modelList:ArrayList<ImgTxtResponseItem>){
+        imgTxtList= ArrayList()
+        imgTxtList.addAll(modelList)
+        notifyDataSetChanged()
+    }
 
     inner class ImgTxtViewHolder(private var mBinding: ImgTxtDemo4Binding) : RecyclerView.ViewHolder
         (mBinding.root) {
-        fun bindData(list: ImgTxtResponseItem) {
+        fun bindData(list: ImgTxtResponseItem, position: Int) {
             mBinding.apply {
                 imgTxtData4 = list
+                Log.d("ImgTxtViewHolder", " bindData: ${list.progress}")
                 executePendingBindings()
-                when {
-                    edtItem4.text!!.equals(0..25) -> {
-                        cardViewItem4.setBackgroundColor(Color.RED)
-                    }
-                    edtItem4.text!!.equals(26..50) -> {
-                        cardViewItem4.setBackgroundColor(Color.BLUE)
-                    }
-                    edtItem4.text!!.equals(51..75) -> {
-                        cardViewItem4.setBackgroundColor(Color.GREEN)
-                    }
-                    edtItem4.text!!.equals(76..100) -> {
-                        cardViewItem4.setBackgroundColor(Color.YELLOW)
-                    }
+                btnPlus.setOnClickListener {
+                    mClickedInterface.clickButton(position = position,edtItem4.text.toString().toInt(), null)
+                }
+                btnMinus.setOnClickListener {
+                    mClickedInterface.clickButton(position = position,null,edtItem4.text.toString().toInt())
                 }
             }
         }
@@ -42,7 +42,7 @@ class ImgTxtAdapter4(private var imgTxtList: ArrayList<ImgTxtResponseItem>) :
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
-    ): ImgTxtAdapter4.ImgTxtViewHolder {
+    ): ImgTxtViewHolder {
         return ImgTxtViewHolder(
             DataBindingUtil.inflate(
                 LayoutInflater.from(parent.context), R
@@ -52,12 +52,16 @@ class ImgTxtAdapter4(private var imgTxtList: ArrayList<ImgTxtResponseItem>) :
         )
     }
 
-    override fun onBindViewHolder(holder: ImgTxtAdapter4.ImgTxtViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: ImgTxtViewHolder, position: Int) {
         val data = imgTxtList[position]
-        holder.bindData(data)
+        holder.bindData(data,position)
     }
 
     override fun getItemCount(): Int {
         return imgTxtList.size
+    }
+
+    interface ButtonClickInterface {
+        fun clickButton(position: Int, plus : Int?, minus : Int?)
     }
 }

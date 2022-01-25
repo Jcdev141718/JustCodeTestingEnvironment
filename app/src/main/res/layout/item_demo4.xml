@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
     <data class="ImgTxtDemo4Binding">
@@ -9,8 +10,9 @@
             type="com.example.finaldemo.model.imgtxt.ImgTxtResponseItem" />
     </data>
 
-    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    <androidx.cardview.widget.CardView
         android:id="@+id/cardView_item4"
+        changeCardColor="@{imgTxtData4.progress}"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
@@ -37,22 +39,22 @@
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/txt1_item4"
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
                 android:text="@{imgTxtData4.text1}"
-                app:layout_constraintEnd_toStartOf="@id/edt_item4"
                 app:layout_constraintStart_toEndOf="@id/img_item4"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:text="Text1" />
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/txt2_item4"
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
                 android:text="@{imgTxtData4.text2}"
-                app:layout_constraintEnd_toStartOf="@id/edt_item4"
                 app:layout_constraintStart_toEndOf="@id/img_item4"
                 app:layout_constraintTop_toBottomOf="@id/txt1_item4"
                 tools:text="Text2" />
@@ -65,22 +67,36 @@
                 android:text="Click"
                 android:textAllCaps="false"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toStartOf="@id/edt_item4"
                 app:layout_constraintStart_toEndOf="@id/img_item4"
                 app:layout_constraintTop_toBottomOf="@id/txt2_item4" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_plus"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="+"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <androidx.appcompat.widget.AppCompatEditText
                 android:id="@+id/edt_item4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="10dp"
-                android:max="100"
                 android:inputType="number"
-                android:text="@{imgTxtData4.progress.toString()}"
+                android:max="100"
+                android:text="@{@string/count(imgTxtData4.progress)}"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/btn_plus"
+                app:layout_constraintTop_toBottomOf="@id/btn_plus" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_minus"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="-"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@id/btn_item4"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toBottomOf="@id/edt_item4" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

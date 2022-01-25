@@ -21,20 +21,6 @@ class ImgTxtAdapter(private var imgTxtList: ArrayList<ImgTxtResponseItem>) :
             mBinding.apply {
                 imgTxtData = list
                 executePendingBindings()
-                when (progressItem3.progress) {
-                    in 0..25 -> {
-                        cardViewItem3.setBackgroundColor(Color.RED)
-                    }
-                    in 26..50 -> {
-                        cardViewItem3.setBackgroundColor(Color.BLUE)
-                    }
-                    in 51..75 -> {
-                        cardViewItem3.setBackgroundColor(Color.GREEN)
-                    }
-                    in 76..100 -> {
-                        cardViewItem3.setBackgroundColor(Color.YELLOW)
-                    }
-                }
             }
         }
     }

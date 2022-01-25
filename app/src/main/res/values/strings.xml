@@ -4,6 +4,7 @@
     <string name="demo_2">Demo 2</string>
     <string name="demo_3">Demo 3</string>
     <string name="demo_4">Demo 4</string>
+    <string name="count">%d </string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="no_internet_available">no internet</string>
 
