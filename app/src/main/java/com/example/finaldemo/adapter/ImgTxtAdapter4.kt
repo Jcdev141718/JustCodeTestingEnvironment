@@ -1,6 +1,9 @@
 package com.example.finaldemo.adapter
 
 import android.annotation.SuppressLint
+import android.graphics.Color
+import android.text.Editable
+import android.text.TextWatcher
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -29,11 +32,47 @@ class ImgTxtAdapter4(private var imgTxtList: ArrayList<ImgTxtResponseItem>, var 
                 imgTxtData4 = list
                 Log.d("ImgTxtViewHolder", " bindData: ${list.progress}")
                 executePendingBindings()
+                edtItem4.addTextChangedListener(object : TextWatcher{
+                    override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
+                        Log.d("BeforeChange", "beforeTextChanged: $p0 $p1 $p2 $p3")
+                    }
+
+                    override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
+                        val no1 = if (edtItem4.text.isNullOrEmpty()) "0" else edtItem4.text.toString()
+
+                        if (edtItem4.text!!.isNotEmpty()){
+                            when (Integer.parseInt(no1)) {
+                                in 0..25 -> {
+                                    cardViewItem4.setBackgroundColor(Color.RED)
+                                }
+                                in 25..50 -> {
+                                    cardViewItem4.setBackgroundColor(Color.BLUE)
+                                }
+                                in 51..75 -> {
+                                    cardViewItem4.setBackgroundColor(Color.GREEN)
+                                }
+                                in 76..100 -> {
+                                    cardViewItem4.setBackgroundColor(Color.YELLOW)
+                                }
+                                else -> {
+                                    cardViewItem4.setBackgroundColor(Color.WHITE)
+                                }
+                            }
+                        }
+                    }
+
+                    override fun afterTextChanged(p0: Editable?) {
+                        Log.d("AfterChange", "afterTextChanged: ")
+                    }
+
+                })
                 btnPlus.setOnClickListener {
-                    mClickedInterface.clickButton(position = position,edtItem4.text.toString().toInt(), null)
+                    val no1 = if (edtItem4.text.isNullOrEmpty()) "0" else edtItem4.text.toString()
+                    mClickedInterface.clickButton(position = position,no1.toInt(), null)
                 }
                 btnMinus.setOnClickListener {
-                    mClickedInterface.clickButton(position = position,null,edtItem4.text.toString().toInt())
+                    val no1 = if (edtItem4.text.isNullOrEmpty()) "0" else edtItem4.text.toString()
+                    mClickedInterface.clickButton(position = position,null,no1.toInt())
                 }
             }
         }

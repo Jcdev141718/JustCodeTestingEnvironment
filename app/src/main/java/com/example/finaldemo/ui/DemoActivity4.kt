@@ -13,7 +13,6 @@ import com.example.finaldemo.network.RetrofitHelper
 import com.example.finaldemo.repository.ImgTxtRepository
 import com.example.finaldemo.viewmodel.ImgTxtViewModel
 import com.example.finaldemo.viewmodel.ImgTxtViewModelFactory
-import java.util.*
 
 class DemoActivity4 : AppCompatActivity() {
     lateinit var mBinding: ActivityDemo4Binding
@@ -44,7 +43,7 @@ class DemoActivity4 : AppCompatActivity() {
                         title = oldvalue.title
                     )
                     mAdapter.updateData(myList)
-                }else if(plus == null && minus != null && minus >= 2){
+                }else if(plus == null && minus != null && minus >= 1){
                     val minus1 = minus.minus(1)
                     val oldvalue =  myList[position]
                     myList[position] = ImgTxtResponseItem(
