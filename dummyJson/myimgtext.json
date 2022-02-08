@@ -45,7 +45,7 @@
     "image": "https://cdn.pixabay.com/photo/2013/10/16/14/04/polar-bear-196318_1280.jpg"
   },
   {
-    "id": 1,
+    "id": 6,
     "progress": 28,
     "title": "Autumn leaves",
     "text1": "Autumn leaves Text1",
@@ -54,7 +54,7 @@
     "image": "https://cdn.pixabay.com/photo/2020/10/03/17/40/autumn-5624139_1280.jpg"
   },
   {
-    "id": 2,
+    "id": 7,
     "progress": 57,
     "title": "Alpine mountains",
     "text1": "Alpine mountains Text1",
@@ -63,7 +63,7 @@
     "image": "https://cdn.pixabay.com/photo/2020/10/03/10/56/mountains-5623208_1280.jpg"
   },
   {
-    "id": 3,
+    "id": 8,
     "progress": 89,
     "title": "Mountain climbing adventure",
     "text1": "Mountain climbing adventure Text1",
@@ -72,7 +72,7 @@
     "image": "https://cdn.pixabay.com/photo/2016/11/08/05/20/adventure-1807524_1280.jpg"
   },
   {
-    "id": 4,
+    "id": 9,
     "progress": 2,
     "title": "Northen light Aurora",
     "text1": "Northen light Aurora Text1",
@@ -81,143 +81,8 @@
     "image": "https://cdn.pixabay.com/photo/2016/02/07/19/48/aurora-1185464_1280.jpg"
   },
   {
-    "id": 5,
+    "id": 10,
     "progress": 26,
-    "title": "Polar Bear",
-    "text1": "Polar Bear Text1",
-    "text2": "Polar Bear Text2",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun",
-    "image": "https://cdn.pixabay.com/photo/2013/10/16/14/04/polar-bear-196318_1280.jpg"
-  },
-  {
-    "id": 1,
-    "progress": 52,
-    "title": "Autumn leaves",
-    "text1": "Autumn leaves Text1",
-    "text2": "Autumn leaves Text2",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun",
-    "image": "https://cdn.pixabay.com/photo/2020/10/03/17/40/autumn-5624139_1280.jpg"
-  },
-  {
-    "id": 2,
-    "progress": 60,
-    "title": "Alpine mountains",
-    "text1": "Alpine mountains Text1",
-    "text2": "Alpine mountains Text2",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun",
-    "image": "https://cdn.pixabay.com/photo/2020/10/03/10/56/mountains-5623208_1280.jpg"
-  },
-  {
-    "id": 3,
-    "progress": 88,
-    "title": "Mountain climbing adventure",
-    "text1": "Mountain climbing adventure Text1",
-    "text2": "Mountain climbing adventure Text2",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun",
-    "image": "https://cdn.pixabay.com/photo/2016/11/08/05/20/adventure-1807524_1280.jpg"
-  },
-  {
-    "id": 4,
-    "progress": 4,
-    "title": "Northen light Aurora",
-    "text1": "Northen light Aurora Text1",
-    "text2": "Northen light Aurora Text2",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun",
-    "image": "https://cdn.pixabay.com/photo/2016/02/07/19/48/aurora-1185464_1280.jpg"
-  },
-  {
-    "id": 5,
-    "progress": 70,
-    "title": "Polar Bear",
-    "text1": "Polar Bear Text1",
-    "text2": "Polar Bear Text2",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun",
-    "image": "https://cdn.pixabay.com/photo/2013/10/16/14/04/polar-bear-196318_1280.jpg"
-  },
-  {
-    "id": 1,
-    "progress": 49,
-    "title": "Autumn leaves",
-    "text1": "Autumn leaves Text1",
-    "text2": "Autumn leaves Text2",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun",
-    "image": "https://cdn.pixabay.com/photo/2020/10/03/17/40/autumn-5624139_1280.jpg"
-  },
-  {
-    "id": 2,
-    "progress": 25,
-    "title": "Alpine mountains",
-    "text1": "Alpine mountains Text1",
-    "text2": "Alpine mountains Text2",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun",
-    "image": "https://cdn.pixabay.com/photo/2020/10/03/10/56/mountains-5623208_1280.jpg"
-  },
-  {
-    "id": 3,
-    "progress": 80,
-    "title": "Mountain climbing adventure",
-    "text1": "Mountain climbing adventure Text1",
-    "text2": "Mountain climbing adventure Text2",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun",
-    "image": "https://cdn.pixabay.com/photo/2016/11/08/05/20/adventure-1807524_1280.jpg"
-  },
-  {
-    "id": 4,
-    "progress": 20,
-    "title": "Northen light Aurora",
-    "text1": "Northen light Aurora Text1",
-    "text2": "Northen light Aurora Text2",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun",
-    "image": "https://cdn.pixabay.com/photo/2016/02/07/19/48/aurora-1185464_1280.jpg"
-  },
-  {
-    "id": 5,
-    "progress": 10,
-    "title": "Polar Bear",
-    "text1": "Polar Bear Text1",
-    "text2": "Polar Bear Text2",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun",
-    "image": "https://cdn.pixabay.com/photo/2013/10/16/14/04/polar-bear-196318_1280.jpg"
-  },
-  {
-    "id": 1,
-    "progress": 90,
-    "title": "Autumn leaves",
-    "text1": "Autumn leaves Text1",
-    "text2": "Autumn leaves Text2",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun",
-    "image": "https://cdn.pixabay.com/photo/2020/10/03/17/40/autumn-5624139_1280.jpg"
-  },
-  {
-    "id": 2,
-    "progress": 59,
-    "title": "Alpine mountains",
-    "text1": "Alpine mountains Text1",
-    "text2": "Alpine mountains Text2",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun",
-    "image": "https://cdn.pixabay.com/photo/2020/10/03/10/56/mountains-5623208_1280.jpg"
-  },
-  {
-    "id": 3,
-    "progress": 99,
-    "title": "Mountain climbing adventure",
-    "text1": "Mountain climbing adventure Text1",
-    "text2": "Mountain climbing adventure Text2",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun",
-    "image": "https://cdn.pixabay.com/photo/2016/11/08/05/20/adventure-1807524_1280.jpg"
-  },
-  {
-    "id": 4,
-    "progress": 77,
-    "title": "Northen light Aurora",
-    "text1": "Northen light Aurora Text1",
-    "text2": "Northen light Aurora Text2",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididun",
-    "image": "https://cdn.pixabay.com/photo/2016/02/07/19/48/aurora-1185464_1280.jpg"
-  },
-  {
-    "id": 5,
-    "progress": 15,
     "title": "Polar Bear",
     "text1": "Polar Bear Text1",
     "text2": "Polar Bear Text2",
