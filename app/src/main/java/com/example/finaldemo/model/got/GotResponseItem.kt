@@ -1,7 +1,12 @@
 package com.example.finaldemo.model.got
 
+import androidx.room.Entity
+import androidx.room.PrimaryKey
+
+@Entity(tableName = "GotResponseTable")
 data class GotResponseItem(
-    val members: List<Member>,
-    val name: String?,
-    val slug: String?
+    @PrimaryKey(autoGenerate = true) var id: Int,
+    var members: List<Member>,
+    var name: String? = null,
+    var slug: String? = null,
 )

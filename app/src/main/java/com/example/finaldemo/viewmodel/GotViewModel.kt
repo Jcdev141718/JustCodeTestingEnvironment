@@ -1,35 +1,31 @@
 package com.example.finaldemo.viewmodel
 
+import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewModelScope
 import com.example.finaldemo.model.got.GotResponseItem
 import com.example.finaldemo.repository.GotRepository
-import retrofit2.Call
-import retrofit2.Callback
-import retrofit2.Response
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 
 /**
  * Created by Abhin.
  */
 class GotViewModel(private val gotRepository: GotRepository) : ViewModel() {
 
-    val gotList = MutableLiveData<List<GotResponseItem>>()
-    val errorMessage = MutableLiveData<String>()
+    private val gotList = MutableLiveData<List<GotResponseItem>>()
+    val gotData : LiveData<List<GotResponseItem>> = gotList
 
-    fun getGot() {
-        val response = gotRepository.getGot()
-        response.enqueue(object : Callback<List<GotResponseItem>> {
-            override fun onResponse(
-                call: Call<List<GotResponseItem>>,
-                response: Response<List<GotResponseItem>>
-            ) {
-                gotList.postValue(response.body())
-            }
+    fun getApiCall(){
+        viewModelScope.launch(Dispatchers.IO) {
+            gotList.postValue(gotRepository.getGot())
+        }
+    }
 
-            override fun onFailure(call: Call<List<GotResponseItem>>, t: Throwable) {
-                errorMessage.postValue(t.message)
-            }
-
-        })
+    fun getLocalData(){
+        viewModelScope.launch(Dispatchers.IO) {
+            gotList.postValue(gotRepository.getAllGot())
+        }
     }
 }

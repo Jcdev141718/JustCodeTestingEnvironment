@@ -1,11 +1,18 @@
 package com.example.finaldemo.model.imgtxt
 
+import androidx.room.Entity
+import androidx.room.PrimaryKey
+
+/**
+ * Created by Abhin.
+ */
+@Entity(tableName = "ImgTxtResponseItem")
 data class ImgTxtResponseItem(
-    val description: String,
-    val id: Int,
-    val progress: Int?,
-    val image: String,
-    val text1: String,
-    val text2: String,
-    val title: String
+    @PrimaryKey(autoGenerate = true) var id: Int,
+    var description: String? = null,
+    var progress: Int? = null,
+    var image: String? = null,
+    var text1: String? = null,
+    var text2: String? = null,
+    var title: String? = null,
 )
